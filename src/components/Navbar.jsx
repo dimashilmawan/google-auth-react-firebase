@@ -7,9 +7,9 @@ import { useAuthContext } from "../context/AuthContext";
 const Navbar = ({ onThemeToggle, isDarkMode }) => {
 	const { user } = useAuthContext();
 	return (
-		<header className="p-5  shadow-md ">
-			<nav>
-				<ul className="relative flex items-center justify-between">
+		<header className=" p-5 shadow-md ">
+			<nav className="mx-auto max-w-6xl">
+				<ul className="relative flex items-center justify-between ">
 					<li>
 						<Link
 							className="flex items-center focus:outline-offset-8 focus:outline-blue-500 dark:focus:outline-gray-100"
