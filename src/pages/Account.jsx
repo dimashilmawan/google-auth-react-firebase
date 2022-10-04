@@ -10,11 +10,13 @@ const Account = () => {
 		}
 	};
 	return (
-		<div className="flex flex-col items-center justify-center space-y-2">
-			<h1>Welcome {user.displayName}</h1>
+		<div className="flex flex-col items-center justify-center space-y-4">
+			<h1 className="text-center text-2xl font-bold text-gray-800 dark:text-gray-100 md:text-5xl">
+				Welcome {user.displayName}
+			</h1>
 			<button
 				onClick={signOutHandler}
-				className="block bg-red-600 px-6 py-2 text-gray-100"
+				className="block rounded-md bg-red-600 px-6 py-2 text-lg font-semibold text-gray-100 transition duration-300 hover:bg-red-400 focus:outline-none focus:ring-2 focus:ring-gray-100"
 			>
 				Logout
 			</button>
