@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
 	};
 	return (
 		<div className={`${isDarkMode ? "dark" : ""}`}>
-			<div className="h-screen w-screen bg-gray-100 dark:bg-gray-800">
+			<div className="h-screen w-screen bg-gray-100 transition-all dark:bg-gray-800">
 				<Navbar onThemeToggle={themeToggleHandler} isDarkMode={isDarkMode} />
 				<main className="pt-32">{children}</main>
 			</div>
